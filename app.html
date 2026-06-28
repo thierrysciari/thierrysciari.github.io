@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="5e018ed7-adbf-4731-b7bc-85a7a5e1d7ec"></script>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("02314f63-5efa-432d-9f5a-64c99a8e9b6d") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("804fc85e-f5df-4688-9b99-500ab220d538") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("b11a4a62-406b-430c-8586-4ed71e44b672") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("c3fcdff2-8b3d-43b4-a3f8-20996ff2c2e3") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("3296c6e4-b76a-458e-abc2-f2049a12da2a") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("e704cf4b-4223-499e-8624-8636f35c31c8") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("e809331c-b02a-4c46-811c-473594e1e894") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("02314f63-5efa-432d-9f5a-64c99a8e9b6d") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("804fc85e-f5df-4688-9b99-500ab220d538") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("b11a4a62-406b-430c-8586-4ed71e44b672") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("c3fcdff2-8b3d-43b4-a3f8-20996ff2c2e3") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("3296c6e4-b76a-458e-abc2-f2049a12da2a") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("e704cf4b-4223-499e-8624-8636f35c31c8") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("e809331c-b02a-4c46-811c-473594e1e894") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("02314f63-5efa-432d-9f5a-64c99a8e9b6d") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("804fc85e-f5df-4688-9b99-500ab220d538") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("b11a4a62-406b-430c-8586-4ed71e44b672") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("c3fcdff2-8b3d-43b4-a3f8-20996ff2c2e3") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("3296c6e4-b76a-458e-abc2-f2049a12da2a") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("e704cf4b-4223-499e-8624-8636f35c31c8") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("e809331c-b02a-4c46-811c-473594e1e894") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("02314f63-5efa-432d-9f5a-64c99a8e9b6d") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("804fc85e-f5df-4688-9b99-500ab220d538") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("b11a4a62-406b-430c-8586-4ed71e44b672") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("c3fcdff2-8b3d-43b4-a3f8-20996ff2c2e3") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("3296c6e4-b76a-458e-abc2-f2049a12da2a") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("e704cf4b-4223-499e-8624-8636f35c31c8") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("e809331c-b02a-4c46-811c-473594e1e894") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("31723c4f-6de4-49e8-9eb6-6c4fa7a99c6e") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("6ad2a070-9d41-4e1f-89e9-c58285aae86e") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("d0a1f417-75d2-4760-99ed-c2e27f30fc6e") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("09775cf4-9cb9-4595-941f-cd73c6dd9010") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("c358f6c0-5a1c-4397-945c-1951edd0df75") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("23deabdb-1d31-48a6-80b0-141d1d13d683") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("92293e52-ea7a-4a61-96d2-031da675e86d") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("7e7efed8-bcf1-4f68-a547-cd753de07713") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("c358f6c0-5a1c-4397-945c-1951edd0df75") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("23deabdb-1d31-48a6-80b0-141d1d13d683") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("92293e52-ea7a-4a61-96d2-031da675e86d") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("7e7efed8-bcf1-4f68-a547-cd753de07713") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("c358f6c0-5a1c-4397-945c-1951edd0df75") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("23deabdb-1d31-48a6-80b0-141d1d13d683") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("92293e52-ea7a-4a61-96d2-031da675e86d") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("7e7efed8-bcf1-4f68-a547-cd753de07713") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  #tsRoot{scroll-behavior:smooth;}
+  .reveal{will-change:transform;}
+  .sidebar{transition:width .6s cubic-bezier(.16,1,.3,1),background .6s cubic-bezier(.16,1,.3,1);}
+  .sidebar:hover{width:240px!important;background:rgba(13,14,18,.94)!important;}
+  .nav-label{opacity:0;transform:translateX(-10px);transition:all .6s cubic-bezier(.16,1,.3,1);white-space:nowrap;}
+  .sidebar:hover .nav-label{opacity:1;transform:none;}
+  .navlink:hover .nav-dot{transform:scale(1.6)!important;background:var(--gold)!important;}
+  .navlink:hover{color:#fff!important;}
+  .langbtn{transition:color .5s cubic-bezier(.16,1,.3,1);cursor:pointer;}
+  .pillar:hover{border-color:rgba(197,160,89,.45)!important;}
+  .pillar:hover .pl-num{color:var(--gold)!important;}
+  .field{transition:border-color .5s cubic-bezier(.16,1,.3,1),background .5s ease;}
+  .field:focus{outline:none;border-color:rgba(197,160,89,.7)!important;background:rgba(197,160,89,.03)!important;}
+  .btn-line{transition:all .6s cubic-bezier(.16,1,.3,1);}
+  .btn-line:hover{background:var(--gold)!important;color:#0d0e12!important;border-color:var(--gold)!important;}
+  .btn-ghost:hover{color:#fff!important;border-color:rgba(255,255,255,.5)!important;}
+  ::-webkit-scrollbar{width:9px;}
+  ::-webkit-scrollbar-track{background:#0d0e12;}
+  ::-webkit-scrollbar-thumb{background:#262a33;border-radius:5px;}
+  .home-hero{grid-template-columns:1.25fr .75fr!important;gap:5vw!important;}
+  .portrait-wrap{width:min(100%,360px);justify-self:center;margin-left:auto;}
+  .portrait-frame{aspect-ratio:4/5;}
+  @media (max-width: 900px){
+    .sidebar{width:64px!important;height:100vh!important;position:fixed!important;top:0!important;left:0!important;flex-direction:column!important;padding:0!important;gap:0!important;overflow:hidden!important;background:rgba(13,14,18,.72)!important;border-right:1px solid rgba(255,255,255,.05)!important;border-bottom:none!important;}
+    .sidebar:hover,.sidebar:focus-within{width:168px!important;background:rgba(13,14,18,.94)!important;}
+    .sidebar .nav-label{display:inline!important;opacity:0!important;transform:translateX(-10px)!important;white-space:normal!important;}
+    .sidebar:hover .nav-label,.sidebar:focus-within .nav-label{opacity:1!important;transform:none!important;}
+    .sidebar .navlink{gap:12px!important;padding:13px 18px!important;font-size:10px!important;letter-spacing:.14em!important;}
+    .sidebar > a{gap:12px!important;padding:28px 18px 24px!important;}
+    main{padding-left:64px!important;}
+    .home-hero{grid-template-columns:1fr!important;gap:42px!important;min-height:auto!important;padding:92px 24px 72px!important;}
+    .portrait-wrap{width:min(100%,320px);justify-self:start;margin-left:0;}
+  }
+  @media (max-width: 640px){
+    .sidebar{width:58px!important;}
+    .sidebar:hover,.sidebar:focus-within{width:132px!important;}
+    .sidebar .navlink{gap:9px!important;padding:12px 12px!important;font-size:9px!important;letter-spacing:.08em!important;}
+    .sidebar > a{gap:9px!important;padding:24px 12px 22px!important;}
+    main{padding-left:58px!important;}
+    #home{padding:82px 18px 60px!important;}
+    .portrait-wrap{width:min(100%,280px);}
+  }
+  ::placeholder{color:rgba(255,255,255,.32);}
+</style>
+</helmet>
+<div id="tsRoot" style="--gold:#C5A059;height:100vh;overflow-y:auto;background:#0d0e12;color:#f3f1ec;font-family:'Inter',system-ui,sans-serif;font-weight:300;position:relative;">
+
+  <nav class="sidebar" style="position:fixed;top:0;left:0;height:100vh;width:74px;background:rgba(13,14,18,.55);backdrop-filter:blur(8px);border-right:1px solid rgba(255,255,255,.05);z-index:50;display:flex;flex-direction:column;overflow:hidden;">
+    <a href="#home" style="text-decoration:none;display:flex;align-items:center;gap:16px;padding:34px 24px 30px;">
+      <span style="font-family:'Playfair Display',serif;font-weight:500;font-size:20px;color:var(--gold);flex:0 0 auto;letter-spacing:.04em;">TS</span>
+      <span class="nav-label" style="font-size:10px;letter-spacing:.26em;color:rgba(255,255,255,.5);text-transform:uppercase;">Sciari</span>
+    </a>
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:6px;">
+      <sc-for list="{{ navItems }}" as="item" hint-placeholder-count="5">
+        <a class="navlink" href="#{{ item.target }}" data-target="{{ item.target }}" style="display:flex;align-items:center;gap:20px;text-decoration:none;color:rgba(255,255,255,.45);padding:14px 25px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:400;">
+          <span class="nav-dot" style="width:6px;height:6px;border-radius:50%;background:rgba(197,160,89,.4);flex:0 0 auto;transition:all .6s cubic-bezier(.16,1,.3,1);"></span>
+          <span class="nav-label">{{ item.label }}</span>
+        </a>
+      </sc-for>
+    </div>
+    <div style="padding:28px 25px;display:flex;align-items:center;gap:18px;">
+      <span style="width:6px;height:6px;border-radius:50%;background:var(--gold);flex:0 0 auto;"></span>
+      <span class="nav-label" style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4);">Available</span>
+    </div>
+  </nav>
+
+  <div style="position:fixed;top:34px;right:48px;z-index:60;display:flex;align-items:center;gap:13px;font-size:12px;font-weight:500;letter-spacing:.16em;">
+    <span class="langbtn" onclick="{{ pickFr }}" style="color:{{ frColor }};">FR</span>
+    <span style="color:rgba(255,255,255,.18);">/</span>
+    <span class="langbtn" onclick="{{ pickEn }}" style="color:{{ enColor }};">EN</span>
+    <span style="color:rgba(255,255,255,.18);">/</span>
+    <span class="langbtn" onclick="{{ pickEs }}" style="color:{{ esColor }};">ES</span>
+  </div>
+
+  <main style="opacity:{{ contentOpacity }};transition:opacity .55s cubic-bezier(.16,1,.3,1);padding-left:74px;">
+
+    <section id="home" class="home-hero" style="min-height:100vh;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:5vw;padding:120px 7vw 100px;">
+      <div>
+        <div class="reveal" style="display:flex;align-items:center;gap:16px;margin-bottom:40px;">
+          <span style="width:46px;height:1px;background:var(--gold);display:block;"></span>
+          <span style="font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);">{{ t.hero.kicker }}</span>
+        </div>
+        <h1 class="reveal" style="font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(46px,6vw,88px);line-height:1.04;margin:0;letter-spacing:-.01em;">{{ t.hero.name }}</h1>
+        <div class="reveal" style="margin-top:26px;display:flex;flex-direction:column;gap:4px;">
+          <span style="font-size:clamp(17px,1.7vw,21px);font-weight:400;color:rgba(243,241,236,.92);letter-spacing:.01em;">{{ t.hero.title }}</span>
+          <span style="font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(18px,1.9vw,24px);color:var(--gold);">{{ t.hero.sub }}</span>
+        </div>
+        <div class="reveal" style="margin-top:44px;display:flex;flex-direction:column;gap:16px;max-width:440px;">
+          <sc-for list="{{ t.hero.bullets }}" as="b" hint-placeholder-count="3">
+            <div style="display:flex;align-items:center;gap:15px;">
+              <span style="width:5px;height:5px;background:var(--gold);transform:rotate(45deg);display:block;flex:0 0 auto;"></span>
+              <span style="font-size:15px;color:rgba(243,241,236,.7);font-weight:300;letter-spacing:.01em;">{{ b }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div class="reveal" style="margin-top:50px;display:flex;flex-wrap:wrap;gap:16px;">
+          <a class="btn-line" href="#contact" style="display:inline-flex;align-items:center;gap:10px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;padding:15px 30px;font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;background:transparent;">{{ t.hero.cta }}</a>
+          <a class="btn-ghost" href="https://www.linkedin.com/in/thierry-sciari" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.75);text-decoration:none;padding:15px 30px;font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;transition:all .6s cubic-bezier(.16,1,.3,1);">LinkedIn</a>
+        </div>
+      </div>
+      <div class="reveal portrait-wrap" style="position:relative;width:min(100%,360px);justify-self:center;margin-left:auto;">
+        <div style="position:absolute;inset:-10px;border:1px solid rgba(197,160,89,.3);pointer-events:none;"></div>
+        <div class="portrait-frame" style="aspect-ratio:4/5;background:#15171d;border:1px solid rgba(197,160,89,.45);display:flex;align-items:center;justify-content:center;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.018) 0,rgba(255,255,255,.018) 1px,transparent 1px,transparent 11px);overflow:hidden;">
+          <img src="img/sciari.jfif" alt="{{ t.hero.portrait }}" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+      </div>
+    </section>
+
+    <section id="pillars" style="padding:140px 7vw;border-top:1px solid rgba(255,255,255,.05);">
+      <div class="reveal" style="display:flex;align-items:baseline;gap:18px;margin-bottom:14px;">
+        <span style="font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);">{{ pillarsLabel }}</span>
+      </div>
+      <h2 class="reveal" style="font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(28px,3.2vw,44px);line-height:1.2;margin:0 0 70px;max-width:760px;letter-spacing:-.01em;">{{ t.pillars.heading }}</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:36px;">
+        <sc-for list="{{ t.pillars.items }}" as="item" hint-placeholder-count="3">
+          <div class="pillar" style="border-top:1px solid rgba(255,255,255,.12);padding:34px 0 0;display:flex;flex-direction:column;gap:18px;transition:border-color .6s cubic-bezier(.16,1,.3,1);">
+            <span class="pl-num" style="font-family:'Playfair Display',serif;font-style:italic;font-size:26px;color:rgba(255,255,255,.3);transition:color .6s ease;">{{ item.n }}</span>
+            <h3 style="font-family:'Playfair Display',serif;font-weight:500;font-size:24px;line-height:1.25;margin:0;letter-spacing:-.01em;">{{ item.title }}</h3>
+            <span style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);">{{ item.scope }}</span>
+            <p style="font-size:15px;line-height:1.8;color:rgba(243,241,236,.62);font-weight:300;margin:6px 0 0;">{{ item.desc }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section id="experience" style="padding:140px 7vw;border-top:1px solid rgba(255,255,255,.05);">
+      <div class="reveal" style="margin-bottom:14px;">
+        <span style="font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);">{{ experienceLabel }}</span>
+      </div>
+      <h2 class="reveal" style="font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(28px,3.2vw,44px);margin:0 0 80px;letter-spacing:-.01em;">{{ t.experience.heading }}</h2>
+      <div style="max-width:920px;margin-left:6px;border-left:1px solid rgba(255,255,255,.1);display:flex;flex-direction:column;gap:80px;">
+        <sc-for list="{{ t.experience.items }}" as="item" hint-placeholder-count="3">
+          <div class="reveal" style="position:relative;padding-left:52px;">
+            <span style="position:absolute;left:-5px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--gold);display:block;"></span>
+            <span style="position:absolute;left:-1px;top:8px;width:0;height:0;"></span>
+            <div style="font-size:12px;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;margin-bottom:14px;">{{ item.period }}</div>
+            <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;margin-bottom:4px;">
+              <h3 style="font-family:'Playfair Display',serif;font-weight:500;font-size:27px;margin:0;letter-spacing:-.01em;">{{ item.company }}</h3>
+            </div>
+            <div style="font-size:16px;color:rgba(243,241,236,.65);font-weight:300;margin-bottom:24px;">{{ item.role }}</div>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:13px;max-width:660px;">
+              <sc-for list="{{ item.points }}" as="pt" hint-placeholder-count="3">
+                <li style="display:flex;gap:16px;align-items:flex-start;font-size:15px;line-height:1.65;color:rgba(243,241,236,.66);font-weight:300;">
+                  <span style="width:18px;height:1px;background:var(--gold);display:block;flex:0 0 auto;margin-top:11px;"></span>
+                  <span>{{ pt }}</span>
+                </li>
+              </sc-for>
+            </ul>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section id="education" style="padding:140px 7vw;border-top:1px solid rgba(255,255,255,.05);">
+      <div class="reveal" style="margin-bottom:14px;">
+        <span style="font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);">{{ educationLabel }}</span>
+      </div>
+      <h2 class="reveal" style="font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(28px,3.2vw,44px);margin:0 0 64px;letter-spacing:-.01em;">{{ t.education.heading }}</h2>
+      <div style="max-width:920px;margin-left:6px;border-left:1px solid rgba(255,255,255,.1);display:flex;flex-direction:column;gap:46px;">
+        <sc-for list="{{ t.education.items }}" as="edu" hint-placeholder-count="6">
+          <div class="reveal" style="position:relative;padding-left:52px;">
+            <span style="position:absolute;left:-5px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--gold);display:block;"></span>
+            <div style="font-size:12px;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;margin-bottom:12px;">{{ edu.period }}</div>
+            <h3 style="font-family:'Playfair Display',serif;font-weight:500;font-size:23px;margin:0 0 5px;letter-spacing:-.01em;">{{ edu.school }}</h3>
+            <div style="font-size:16px;color:rgba(243,241,236,.78);font-weight:300;">{{ edu.diploma }}</div>
+            <div style="font-size:14px;color:rgba(243,241,236,.5);font-weight:300;margin-top:3px;letter-spacing:.01em;">{{ edu.field }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section id="contact" style="padding:150px 7vw 160px;border-top:1px solid rgba(255,255,255,.05);">
+      <div style="max-width:680px;">
+        <div class="reveal" style="margin-bottom:14px;">
+          <span style="font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);">{{ contactLabel }}</span>
+        </div>
+        <h2 class="reveal" style="font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(30px,3.6vw,52px);line-height:1.18;margin:0 0 28px;letter-spacing:-.01em;">{{ t.contact.heading }}</h2>
+        <p class="reveal" style="font-size:17px;line-height:1.8;color:rgba(243,241,236,.62);font-weight:300;margin:0 0 44px;max-width:480px;">{{ t.contact.body }}</p>
+        <a class="reveal btn-line" href="https://www.linkedin.com/in/thierry-sciari" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;padding:17px 38px;font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;background:transparent;">
+          <span style="font-family:'Playfair Display',serif;font-weight:600;font-size:14px;">in</span>{{ t.contact.linkedin }}
+        </a>
+      </div>
+      <div class="reveal" style="margin-top:100px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;border-top:1px solid rgba(255,255,255,.07);padding-top:30px;color:rgba(243,241,236,.4);font-size:12px;letter-spacing:.1em;">
+        <span>© 2026 Thierry Sciari</span>
+        <span style="font-family:'Playfair Display',serif;font-style:italic;color:var(--gold);">{{ t.hero.title }} · {{ t.hero.sub }}</span>
+      </div>
+    </section>
+
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:860},&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#C5A059&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Theme&quot;},&quot;showSectionNumbers&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Theme&quot;}}">
+class Component extends DCLogic {
+  state = { lang: 'en', op: 1 };
+
+  DATA = {
+    en: {
+      nav: { home:'Home', pillars:'Expertise', experience:'Experience', education:'Education', contact:'Contact' },
+      hero: {
+        kicker:'Lyon, France', name:'Thierry Sciari',
+        title:'Key Account Manager', sub:'Industry & Defense',
+        portrait:'Portrait',
+        cta:'Get in touch',
+        bullets:['20+ years of senior commercial experience','Multi-million-euro program & budget control','Trilingual — French · English · Spanish']
+      },
+      pillars: {
+        label:'Expertise', heading:'Three disciplines at the core of every engagement.',
+        items:[
+          { n:'I', title:'Strategic Account Management', scope:'Industry · Energy · Defense', desc:'Building, growing and reactivating high-value accounts across the most demanding industrial sectors.' },
+          { n:'II', title:'Tender & Contract Negotiation', scope:"Appels d'offres · Frame Agreements", desc:'Leading complex public and private tenders through to multi-year contracts and frame agreements.' },
+          { n:'III', title:'International Leadership', scope:'Trilingual · Cross-functional', desc:'Directing cross-functional teams and multi-million-euro programs across borders, in three languages.' }
+        ]
+      },
+      experience: {
+        label:'Experience', heading:'A senior commercial trajectory.',
+        items:[
+          { period:'2023 — Present', company:'Appro-Services', role:'Key Account Manager · Gas, Oil, Pharma, Nuclear, Defense',
+            points:['Reactivated dormant strategic accounts and rebuilt commercial momentum.','Led contract and frame-agreement negotiations end to end.','Strengthened client retention across high-stakes industrial programs.'] },
+          { period:'2021 — 2023', company:'Alter Watt', role:'Business Developer · Energy Efficiency',
+            points:['Engineered complex technical energy-efficiency solutions.','Ran audits and secured public funding for clients.','Authored winning responses to competitive tenders.'] },
+          { period:'2005 — 2020', company:'Res Publica · Lyon', role:'Director of Operations & Program Manager',
+            points:['Managed a €3.2M annual operating budget.','Led cross-functional teams of up to 21 technicians.','Directed international engineering programs (Latin America / Spain).'] }
+        ]
+      },
+      education: {
+        label:'Education', heading:'Engineering, management & international business.',
+        items:[
+          { period:'2022 — 2023', school:'La Solive', diploma:'Energy Renovation Project Manager', field:'Building · Renovation · Energy audits' },
+          { period:'2020', school:'Centrale Lille', diploma:'MOOC — Project Management (GdP)', field:'Grade: 91%' },
+          { period:'2019', school:'Alban Marical', diploma:'Oral Communication & Public Speaking', field:'Professional training' },
+          { period:'1998 — 2000', school:'ICL · Lyon', diploma:'Business Development Manager', field:'International Business' },
+          { period:'1997 — 1998', school:'University of Seville · Spain', diploma:'DUETI — International Technology Studies', field:'Business Administration' },
+          { period:'1995 — 1997', school:'IUT · Villeurbanne', diploma:'DUT — Sales & Marketing Techniques', field:'Lyon, France' },
+          { period:'1995', school:'Lycée Léonard de Vinci', diploma:'Baccalauréat', field:'Honours (Mention Bien)' }
+        ]
+      },
+      contact: {
+        label:'Contact', heading:"Let's start a conversation.",
+        body:'Open to senior Key Account Manager opportunities in Industry & Defense. Available for confidential discussions.',
+        linkedin:'LinkedIn', send:'Send message',
+        fName:'Name', fEmail:'Email', fMsg:'Message',
+        phName:'Your name', phEmail:'your@email.com', phMsg:'A few words…'
+      }
+    },
+
+    fr: {
+      nav: { home:'Accueil', pillars:'Expertise', experience:'Expérience', education:'Formation', contact:'Contact' },
+      hero: {
+        kicker:'Lyon, France', name:'Thierry Sciari',
+        title:'Key Account Manager', sub:'Industrie & Défense',
+        portrait:'Portrait', cta:'Me contacter',
+        bullets:["20+ ans d'expérience commerciale senior",'Pilotage de programmes et budgets pluri-millions','Trilingue — Français · Anglais · Espagnol']
+      },
+      pillars: {
+        label:'Expertise', heading:'Trois disciplines au cœur de chaque mission.',
+        items:[
+          { n:'I', title:'Gestion Stratégique de Comptes', scope:'Industrie · Énergie · Défense', desc:'Construire, développer et réactiver des comptes à forte valeur dans les secteurs industriels les plus exigeants.' },
+          { n:'II', title:"Négociation d'Appels d'Offres & Contrats", scope:"Appels d'offres · Accords-cadres", desc:'Piloter des appels d\u2019offres publics et privés complexes jusqu\u2019aux contrats pluriannuels et accords-cadres.' },
+          { n:'III', title:'Leadership International', scope:'Trilingue · Transverse', desc:'Diriger des équipes transverses et des programmes pluri-millions d\u2019euros au-delà des frontières, en trois langues.' }
+        ]
+      },
+      experience: {
+        label:'Expérience', heading:'Un parcours commercial de dirigeant.',
+        items:[
+          { period:"2023 — Aujourd'hui", company:'Appro-Services', role:'Key Account Manager · Gaz, Pétrole, Pharma, Nucléaire, Défense',
+            points:['Réactivation de comptes stratégiques dormants et relance de la dynamique commerciale.',"Pilotage de bout en bout des négociations de contrats et d'accords-cadres.",'Renforcement de la fidélisation sur des programmes industriels à fort enjeu.'] },
+          { period:'2021 — 2023', company:'Alter Watt', role:'Business Developer · Efficacité Énergétique',
+            points:["Conception de solutions techniques complexes d'efficacité énergétique.",'Réalisation d\u2019audits et obtention de financements publics.','Rédaction de réponses gagnantes aux appels d\u2019offres.'] },
+          { period:'2005 — 2020', company:'Res Publica · Lyon', role:'Directeur des Opérations & Chef de Programme',
+            points:["Gestion d'un budget opérationnel annuel de 3,2 M€.","Encadrement d'équipes transverses jusqu'à 21 techniciens.",'Direction de programmes d\u2019ingénierie internationaux (Amérique latine / Espagne).'] }
+        ]
+      },
+      education: {
+        label:'Formation', heading:'Ingénierie, management & commerce international.',
+        items:[
+          { period:'2022 — 2023', school:'La Solive', diploma:'Chef de projet rénovation énergétique', field:'Bâtiment · Rénovation · Audits énergétiques' },
+          { period:'2020', school:'Centrale Lille', diploma:'MOOC — Gestion de projet (GdP)', field:'Note : 91%' },
+          { period:'2019', school:'Alban Marical', diploma:'Communication orale & Prise de parole en public', field:'Formation professionnelle' },
+          { period:'1998 — 2000', school:'ICL · Lyon', diploma:'Business Development Manager', field:'Commerce international' },
+          { period:'1997 — 1998', school:'Université de Séville · Espagne', diploma:'DUETI — Études Technologiques Internationales', field:'Administration des entreprises' },
+          { period:'1995 — 1997', school:'IUT · Villeurbanne', diploma:'DUT — Techniques de Commercialisation', field:'Villeurbanne (69)' },
+          { period:'1995', school:'Lycée Léonard de Vinci', diploma:'Baccalauréat', field:'Mention Bien' }
+        ]
+      },
+      contact: {
+        label:'Contact', heading:'Entamons la conversation.',
+        body:"Ouvert aux opportunités de Key Account Manager senior dans l'Industrie & la Défense. Disponible pour des échanges confidentiels.",
+        linkedin:'LinkedIn', send:'Envoyer',
+        fName:'Nom', fEmail:'Email', fMsg:'Message',
+        phName:'Votre nom', phEmail:'votre@email.com', phMsg:'Quelques mots…'
+      }
+    },
+
+    es: {
+      nav: { home:'Inicio', pillars:'Especialidad', experience:'Experiencia', education:'Formación', contact:'Contacto' },
+      hero: {
+        kicker:'Lyon, Francia', name:'Thierry Sciari',
+        title:'Key Account Manager', sub:'Industria y Defensa',
+        portrait:'Retrato', cta:'Contactar',
+        bullets:['Más de 20 años de experiencia comercial','Dirección de programas y presupuestos multimillonarios','Trilingüe — Francés · Inglés · Español']
+      },
+      pillars: {
+        label:'Especialidad', heading:'Tres disciplinas en el centro de cada misión.',
+        items:[
+          { n:'I', title:'Gestión Estratégica de Cuentas', scope:'Industria · Energía · Defensa', desc:'Construir, desarrollar y reactivar cuentas de alto valor en los sectores industriales más exigentes.' },
+          { n:'II', title:'Negociación de Licitaciones y Contratos', scope:'Licitaciones · Acuerdos marco', desc:'Liderar licitaciones públicas y privadas complejas hasta contratos plurianuales y acuerdos marco.' },
+          { n:'III', title:'Liderazgo Internacional', scope:'Trilingüe · Transversal', desc:'Dirigir equipos multidisciplinares y programas multimillonarios más allá de las fronteras, en tres idiomas.' }
+        ]
+      },
+      experience: {
+        label:'Experiencia', heading:'Una trayectoria comercial directiva.',
+        items:[
+          { period:'2023 — Actualidad', company:'Appro-Services', role:'Key Account Manager · Gas, Petróleo, Farma, Nuclear, Defensa',
+            points:['Reactivación de cuentas estratégicas inactivas y recuperación del impulso comercial.','Dirección integral de negociaciones de contratos y acuerdos marco.','Refuerzo de la fidelización en programas industriales de alto nivel.'] },
+          { period:'2021 — 2023', company:'Alter Watt', role:'Business Developer · Eficiencia Energética',
+            points:['Diseño de soluciones técnicas complejas de eficiencia energética.','Auditorías y obtención de financiación pública.','Redacción de propuestas ganadoras en licitaciones.'] },
+          { period:'2005 — 2020', company:'Res Publica · Lyon', role:'Director de Operaciones y Jefe de Programa',
+            points:['Gestión de un presupuesto operativo anual de 3,2 M€.','Dirección de equipos multidisciplinares de hasta 21 técnicos.','Dirección de programas de ingeniería internacionales (América Latina / España).'] }
+        ]
+      },
+      education: {
+        label:'Formación', heading:'Ingeniería, gestión y comercio internacional.',
+        items:[
+          { period:'2022 — 2023', school:'La Solive', diploma:'Jefe de proyecto de renovación energética', field:'Edificación · Renovación · Auditorías energéticas' },
+          { period:'2020', school:'Centrale Lille', diploma:'MOOC — Gestión de proyectos (GdP)', field:'Nota: 91%' },
+          { period:'2019', school:'Alban Marical', diploma:'Comunicación oral y oratoria', field:'Formación profesional' },
+          { period:'1998 — 2000', school:'ICL · Lyon', diploma:'Business Development Manager', field:'Comercio internacional' },
+          { period:'1997 — 1998', school:'Universidad de Sevilla · España', diploma:'DUETI — Estudios Tecnológicos Internacionales', field:'Administración de empresas' },
+          { period:'1995 — 1997', school:'IUT · Villeurbanne', diploma:'DUT — Técnicas de Comercialización', field:'Villeurbanne (69)' },
+          { period:'1995', school:'Lycée Léonard de Vinci', diploma:'Bachillerato', field:'Mención Bien' }
+        ]
+      },
+      contact: {
+        label:'Contacto', heading:'Empecemos a conversar.',
+        body:'Abierto a oportunidades de Key Account Manager senior en Industria y Defensa. Disponible para conversaciones confidenciales.',
+        linkedin:'LinkedIn', send:'Enviar mensaje',
+        fName:'Nombre', fEmail:'Email', fMsg:'Mensaje',
+        phName:'Tu nombre', phEmail:'tu@email.com', phMsg:'Unas palabras…'
+      }
+    }
+  };
+
+  go(l) {
+    if (l === this.state.lang) return;
+    this.setState({ op: 0 });
+    setTimeout(() => this.setState({ lang: l, op: 1 }), 280);
+  }
+
+  componentDidMount() {
+    const root = document.getElementById('tsRoot');
+    if (!root) return;
+    const accent = this.props.accentColor;
+    if (accent) root.style.setProperty('--gold', accent);
+    const G = accent || (getComputedStyle(root).getPropertyValue('--gold').trim() || '#C5A059');
+
+    // Content is always visible (no opacity gating). The entrance is a TRANSFORM-ONLY
+    // Web Animation, so even if the document timeline is frozen (background tab) the
+    // element simply rests at its final position — it can never be trapped invisible.
+    const animateIn = (el, delay) => {
+      try {
+        el.animate(
+          [{ transform: 'translateY(24px)' }, { transform: 'translateY(0)' }],
+          { duration: 760, delay: delay || 0, easing: 'cubic-bezier(.16,1,.3,1)', fill: 'none' }
+        );
+      } catch (err) { /* no-op: element stays visible */ }
+    };
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { animateIn(e.target, 0); io.unobserve(e.target); } });
+    }, { root, threshold: 0.12 });
+
+    const vh = window.innerHeight || root.clientHeight;
+    let stagger = 0;
+    root.querySelectorAll('.reveal').forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < vh * 0.96) { animateIn(el, stagger); stagger += 85; }
+      else { io.observe(el); }
+    });
+
+    // Active nav indicator (color only — never gated on the timeline).
+    const dim = 'rgba(255,255,255,.45)';
+    const links = root.querySelectorAll('[data-target]');
+    const navio = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          const id = e.target.id;
+          links.forEach((n) => {
+            const on = n.getAttribute('data-target') === id;
+            n.style.color = on ? G : dim;
+            const dot = n.querySelector('.nav-dot');
+            if (dot) { dot.style.background = on ? G : 'rgba(197,160,89,.4)'; dot.style.transform = on ? 'scale(1.6)' : 'scale(1)'; }
+          });
+        }
+      });
+    }, { root, threshold: 0.5 });
+    root.querySelectorAll('section[id]').forEach((s) => navio.observe(s));
+  }
+
+  renderVals() {
+    const lang = this.state.lang;
+    const t = this.DATA[lang];
+    const showN = this.props.showSectionNumbers ?? true;
+    const lbl = (n, w) => showN ? (n + '  ·  ' + w) : w;
+    const on = this.props.accentColor || '#C5A059';
+    const dim = 'rgba(255,255,255,.45)';
+    return {
+      t,
+      navItems: [
+        { label: t.nav.home, target: 'home' },
+        { label: t.nav.pillars, target: 'pillars' },
+        { label: t.nav.experience, target: 'experience' },
+        { label: t.nav.education, target: 'education' },
+        { label: t.nav.contact, target: 'contact' }
+      ],
+      contentOpacity: this.state.op,
+      frColor: lang === 'fr' ? on : dim,
+      enColor: lang === 'en' ? on : dim,
+      esColor: lang === 'es' ? on : dim,
+      pickFr: () => this.go('fr'),
+      pickEn: () => this.go('en'),
+      pickEs: () => this.go('es'),
+      onSubmit: (e) => {
+        e.preventDefault();
+        const f = e.target;
+        const subj = encodeURIComponent('Contact — Thierry Sciari');
+        const body = encodeURIComponent((f.name.value || '') + '\n' + (f.email.value || '') + '\n\n' + (f.message.value || ''));
+        window.location.href = 'mailto:contact@thierrysciari.com?subject=' + subj + '&body=' + body;
+      },
+      pillarsLabel: lbl('01', t.pillars.label),
+      experienceLabel: lbl('02', t.experience.label),
+      educationLabel: lbl('03', t.education.label),
+      contactLabel: lbl('04', t.contact.label)
+    };
+  }
+}
+</script>
+
+
+</body></html>
